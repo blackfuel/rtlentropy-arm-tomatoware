@@ -9,8 +9,8 @@ cd rtlentropy-arm-tomatoware
 ```
 
 ### Tomatoware
-If you're unfamiliar with Tomatoware, please visit the home page.
+If you're unfamiliar with Tomatoware, please visit the home page.  
 https://github.com/lancethepants/tomatoware
 
-Tomatoware is a toolchain that lets you compile programs directly on your ARM router.  However, you must first build the toolchain on your Debian desktop computer, then copy it to your router.
+Tomatoware is a toolchain that lets you compile programs directly on your ARM router.  However, you must first build the toolchain on your Debian desktop computer, then copy it to the router.
 
