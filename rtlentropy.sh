@@ -69,7 +69,7 @@ FOLDER="${URL##*/}"
 FOLDER="${FOLDER%.*}"
 DL="${FOLDER}.tar.gz"
 mkdir -p $SRC/libusb && cd $SRC/libusb
-[ "$REBUILD_ALL" == "1" ] && rm -rf "$DL" "$FOLDER"
+[ "$REBUILD_ALL" == "1" ] && rm -rf "$FOLDER"
 if [ ! -f "$FOLDER/__package_installed" ]; then
 [ ! -f "$DL" ] && rm -rf "$FOLDER" && git clone $URL && tar czvf $DL $FOLDER
 [ ! -d "$FOLDER" ] && tar xzvf $DL
@@ -100,7 +100,7 @@ FOLDER="${URL##*/}"
 FOLDER="${FOLDER%.*}"
 DL="${FOLDER}.tar.gz"
 mkdir -p $SRC/rtl-sdr && cd $SRC/rtl-sdr
-[ "$REBUILD_ALL" == "1" ] && rm -rf "$DL" "$FOLDER"
+[ "$REBUILD_ALL" == "1" ] && rm -rf "$FOLDER"
 if [ ! -f "$FOLDER/__package_installed" ]; then
 [ ! -f "$DL" ] && rm -rf "$FOLDER" && git clone $URL && tar czvf $DL $FOLDER
 [ ! -d "$FOLDER" ] && tar xzvf $DL
@@ -129,7 +129,7 @@ FOLDER="${URL##*/}"
 FOLDER="${FOLDER%.*}"
 DL="${FOLDER}.tar.gz"
 mkdir -p $SRC/rtl-entropy && cd $SRC/rtl-entropy
-[ "$REBUILD_ALL" == "1" ] && rm -rf "$DL" "$FOLDER"
+[ "$REBUILD_ALL" == "1" ] && rm -rf "$FOLDER"
 if [ ! -f "$FOLDER/__package_installed" ]; then
 [ ! -f "$DL" ] && rm -rf "$FOLDER" && git clone $URL && tar czvf $DL $FOLDER
 [ ! -d "$FOLDER" ] && tar xzvf $DL
